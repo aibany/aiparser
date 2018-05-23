@@ -1,5 +1,7 @@
 package com.aibany.aiparser.model;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.util.List;
 
 
@@ -10,6 +12,7 @@ public class IPAInfo {
 	private String buildNumber;
 	private String bundleName;
 	private String requiredDeviceCapabilities;
+	@JSONField(serialize = false)
 	private byte[] bundleIcon;
 	private String platformVersion;
 	private Boolean iPadSupport;
@@ -21,7 +24,9 @@ public class IPAInfo {
 	private List<String>provisioningProfileDevices;
 	private String teamIdentifier;
 	private String teamName;
+	@JSONField(serialize = false)
 	private byte[] infoPlistFile;
+	@JSONField(serialize = false)
 	private byte[] mobileProvisionFile;
 	private long fileSize;
 	private String bundleIconFileName;
