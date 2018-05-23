@@ -76,7 +76,7 @@ public class IPAReader {
                 NSDictionary rootDict = (NSDictionary) PropertyListParser.parse(info.getInfoPlistFile());
 
                 info.setMinimumOSVersion(rootDict.get("MinimumOSVersion").toString());
-                info.setBundleName(rootDict.get("CFBundleName").toString());
+                info.setBundleName(rootDict.get("CFBundleDisplayName").toString());
                 info.setBundleVersionString(rootDict.get("CFBundleShortVersionString").toString());
                 info.setBundleIdentifier(rootDict.get("CFBundleIdentifier").toString());
                 info.setBuildNumber(rootDict.get("CFBundleVersion").toString());
