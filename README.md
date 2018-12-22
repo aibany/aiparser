@@ -1,7 +1,96 @@
 apk ipa包解析
 
-支持Android包信息解析、iOS包信息解析
-能拿到版本号、包名、图片等等
+支持Android包信息解析、iOS包信息解析，自动根据后缀判断包类型
+能拿到如下信息， 其中， iOS图标已实现解密
+
+```
+public class AppInfo {
+
+    /**
+     * ==========公共特性
+     */
+
+    /**
+     * 包名
+     */
+    private String packageName;
+
+    /**
+     * 应用名
+     */
+    private String label;
+
+    /**
+     * 应用图片标名
+     */
+    private String icon;
+
+    /**
+     * 应用图片二进制
+     */
+    @JSONField(serialize = false)
+    private byte[] iconData;
+
+    /**
+     * 版本名
+     */
+    private String versionName;
+
+    /**
+     * 版本号
+     */
+    private Long versionCode;
+
+    /**
+     * 最低系统要求
+     */
+    private String minSdkVersion;
+
+    /**
+     * 最低系统要求
+     */
+    private String minSdkString;
+
+    /**
+     * 文件大小字节
+     */
+    private long fileSize;
+
+
+    /**
+     * 安卓特性
+     */
+    private String installLocation;
+    private String targetSdkVersion;
+    private String maxSdkVersion;
+    private GlEsVersion glEsVersion;
+    private boolean anyDensity;
+    private boolean smallScreens;
+    private boolean normalScreens;
+    private boolean largeScreens;
+    private List<String> usesPermissions = new ArrayList();
+    private List<UseFeature> usesFeatures = new ArrayList();
+    private List<Permission> permissions = new ArrayList();
+
+    /**
+     * iOS特性
+     */
+    private String requiredDeviceCapabilities;
+    private String platformVersion;
+    private Boolean iPadSupport;
+    private Boolean iPhoneSupport;
+    private String provisioningProfileName;
+    private String provisioningProfileCreationDate;
+    private String provisioningProfileExpirationDate;
+    private List<String>provisioningProfileDevices;
+    private String teamIdentifier;
+    private String teamName;
+    private byte[] infoPlistFile;
+    private byte[] mobileProvisionFile;
+}
+```
+
+
 
 
 使用方式
