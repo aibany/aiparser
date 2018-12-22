@@ -45,16 +45,17 @@ public class ParserTests {
 
         System.out.println(info.getBundleName());
         System.out.println(info.getRequiredDeviceCapabilities());
+
     }
 
     @Test
     public void testPlist() throws Exception {
-        String path = "/Users/libo/Desktop/FlyFish-Release453.ipa";
+        String path = "/Users/libo/Desktop/1.ipa";
 
         AppInfo appInfo = AppParser.parse(path);
 
         FileOutputStream out = new FileOutputStream(new File("/Users/libo/Desktop/test.plist"));
-        PlistGenerator.generatorPlist(appInfo,"http://download.ipa", out);
+        PlistGenerator.generatorPlist(appInfo,"http://download.taobaocdn.com/freedom/57894/apple/FlyFish-Release453.ipa", out);
     }
 
     @Test

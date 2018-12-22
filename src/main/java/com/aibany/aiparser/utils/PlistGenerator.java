@@ -41,6 +41,6 @@ public class PlistGenerator {
      * 生成企业版schemal
      */
     public static String generatorSchemal(String plistUrl) {
-        return "tms-services://?action=download-manifest&url=" + plistUrl;
+        return "itms-services://?action=download-manifest&url=" + plistUrl;
     }
 }

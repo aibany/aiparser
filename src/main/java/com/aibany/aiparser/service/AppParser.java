@@ -33,7 +33,7 @@ public class AppParser {
             try {
                 IPAReader reader = new IPAReader(filePath);
                 IPAInfo info = reader.parse();
-                return BeanUtils.infoFromIPAMeta(info);
+                return BeanUtils.infoFromIPAMeta(info, filePath);
             }catch (Exception e) {
                 throw e;
             }

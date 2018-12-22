@@ -3,12 +3,14 @@ package com.aibany.aiparser.utils;
 import com.aibany.aiparser.model.AppInfo;
 import com.aibany.aiparser.model.IPAInfo;
 import net.dongliu.apk.parser.bean.ApkMeta;
-import net.dongliu.apk.parser.bean.GlEsVersion;
-import net.dongliu.apk.parser.bean.Permission;
-import net.dongliu.apk.parser.bean.UseFeature;
+import org.apache.commons.io.IOUtils;
+import org.python.util.PythonInterpreter;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URL;
 
 public class BeanUtils {
 
@@ -30,22 +32,41 @@ public class BeanUtils {
         return info;
     }
 
-    public static AppInfo infoFromIPAMeta(IPAInfo meta) {
+    public static AppInfo infoFromIPAMeta(IPAInfo meta, String ipaPath) {
 
         if (meta == null) {
             return null;
         }
         AppInfo info = new AppInfo();
-        info.setVersionCode(Long.parseLong(meta.getBuildNumber().replace(".","")));
+        info.setVersionCode(Long.parseLong(meta.getBundleVersionString().replace(".","")));
         info.setVersionName(meta.getBundleVersionString());
         info.setIcon(meta.getBundleIconFileName());
         info.setPackageName(meta.getBundleIdentifier());
         info.setLabel(meta.getBundleName());
         info.setFileSize(meta.getFileSize());
         info.setMinSdkVersion(meta.getMinimumOSVersion());
-        info.setIconData(meta.getBundleIcon());
         info.setMinSdkString(minLevelString(1,info.getMinSdkVersion()));
 
+        try {
+
+            InputStream pyInput = BeanUtils.class.getClassLoader().getResourceAsStream("ipin.py");
+
+            String pngPath = new File(ipaPath).getParent() + "/icon_tmp.png";
+
+            IOUtils.write(meta.getBundleIcon(), new FileOutputStream(pngPath));
+
+            String[] args = {pngPath};
+            PythonInterpreter.initialize(System.getProperties(),System.getProperties(),args);
+            PythonInterpreter interpreter = new PythonInterpreter();
+            System.out.println("to exchange img data");
+            interpreter.execfile(pyInput);
+
+            System.out.println("to set img data");
+            info.setIconData(IOUtils.toByteArray(new FileInputStream(pngPath)));
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
         return info;
     }
 
