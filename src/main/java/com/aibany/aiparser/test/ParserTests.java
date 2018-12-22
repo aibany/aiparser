@@ -50,7 +50,7 @@ public class ParserTests {
 
     @Test
     public void testPlist() throws Exception {
-        String path = "/Users/libo/Desktop/1.ipa";
+        String path = "/Users/libo/Desktop/FlyFish-Release453.ipa";
 
         AppInfo appInfo = AppParser.parse(path);
 

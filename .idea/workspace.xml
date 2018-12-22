@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720b3170-1114-463d-82d7-c8ab2c4b0497" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ipin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aiparser.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/service/AppParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/service/AppParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/PlistGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/PlistGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tick1.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tick2.jpg" beforeDir="false" />
     </list>
@@ -73,7 +67,7 @@
       <file leaf-file-name="ApkMeta.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/net/dongliu/apk-parser/2.5.0/apk-parser-2.5.0.jar!/net/dongliu/apk/parser/bean/ApkMeta.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="266">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
@@ -83,8 +77,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+              <first_editor relative-caret-position="57">
+                <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
               </first_editor>
               <second_editor />
             </state>
@@ -94,8 +88,8 @@
       <file leaf-file-name="ParserTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="-134">
+              <caret line="6" column="43" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -194,9 +188,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/service/AppParser.java" />
         <option value="$PROJECT_DIR$/target/classes/ipin.py" />
         <option value="$PROJECT_DIR$/src/main/resources/ipin.py" />
-        <option value="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/BeanUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -223,9 +217,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1766" />
-    <option name="y" value="162" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -237,7 +231,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,8 +296,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,7 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParserTests.testPlist">
+  <component name="RunManager" selected="JUnit.ParserTests">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -563,11 +557,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParserTests" />
         <item itemvalue="JUnit.ParserTests.testPlist" />
         <item itemvalue="JUnit.ParserTests.testExe" />
         <item itemvalue="JUnit.ParserTests.testParser" />
         <item itemvalue="JUnit.ParserTests.testIPA" />
-        <item itemvalue="JUnit.ParserTests" />
       </list>
     </recent_temporary>
   </component>
@@ -608,13 +602,11 @@
       <workItem from="1542959227990" duration="1773000" />
       <workItem from="1543487350895" duration="275000" />
       <workItem from="1545463709858" duration="66000" />
+      <workItem from="1545463916967" duration="166000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParserTests_testPlist - 2018.06.19 at 10h 29m 39s.xml">
-      <configuration name="ParserTests.testPlist" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ParserTests_testPlist - 2018.06.19 at 10h 38m 37s.xml">
       <configuration name="ParserTests.testPlist" configurationId="JUnit" />
     </history-entry>
@@ -642,45 +634,49 @@
     <history-entry file="ParserTests_testPlist - 2018.11.23 at 15h 56m 06s.xml">
       <configuration name="ParserTests.testPlist" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ParserTests - 2018.12.22 at 15h 33m 16s.xml">
+      <configuration name="ParserTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39733000" />
+    <option name="totallyTimeSpent" value="39899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.40681577" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.029978586" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32800853" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25346112" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32800853" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.36741215" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16648822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16862956" />
       <window_info anchor="right" id="Database" order="3" weight="0.32976446" />
       <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3226837" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.40681577" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3226837" />
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,6 +691,98 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/model/AppInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4218">
+          <caret line="342" column="37" selection-start-line="342" selection-start-column="37" selection-end-line="342" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3426#3427#0" expanded="true" />
+            <element signature="e#3465#3466#0" expanded="true" />
+            <element signature="e#5115#5116#0" expanded="true" />
+            <element signature="e#5149#5150#0" expanded="true" />
+            <element signature="e#8013#8014#0" expanded="true" />
+            <element signature="e#8069#8070#0" expanded="true" />
+            <element signature="e#8117#8118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/dongliu/apk-parser/2.5.0/apk-parser-2.5.0.jar!/net/dongliu/apk/parser/bean/ApkMeta.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/internal/runners/TestMethodRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1463">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/python/jython-standalone/2.7.0/jython-standalone-2.7.0.jar!/org/python/util/PythonInterpreter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="151" column="16" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/service/AppParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/dongliu/apk-parser/2.5.0/apk-parser-2.5.0.jar!/net/dongliu/apk/parser/ApkFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/utils/PlistGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/model/AppInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4218">
@@ -969,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.0/junit-4.0.jar!/org/junit/internal/runners/TestMethodRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1463">
@@ -1046,16 +1127,23 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/dongliu/apk-parser/2.5.0/apk-parser-2.5.0.jar!/net/dongliu/apk/parser/bean/ApkMeta.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="266">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/aibany/aiparser/test/ParserTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="6" column="43" selection-end-line="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <first_editor relative-caret-position="57">
+            <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
           </first_editor>
           <second_editor />
         </state>
